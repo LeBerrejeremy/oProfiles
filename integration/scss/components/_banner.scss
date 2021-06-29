@@ -1,7 +1,17 @@
 //Mon fichier est préfixé par un _ 
 //afin d'indiquer que c'est un fichier un inclure
+@use "../abstracts/variables";
+
+
 
 .banner{
     background-color: black;
     color:white;
+    &__header{
+        margin-bottom: variables.$gutter-large;
+        &__title{
+            font-size: variables.$font-size-large;
+        }
+    }
 }
+
