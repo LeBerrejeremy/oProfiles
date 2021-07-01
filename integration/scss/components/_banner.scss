@@ -5,13 +5,54 @@
 
 
 .banner{
-    background-color: black;
-    color:white;
+
+    background-color: variables.$color-background-banner;
+    background-image: url(../images/see.jpg);
+    background-size: cover;
+    background-position: top right;
+    color:variables.$color-text-secondary;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 0 variables.$gutter;
+    position:relative;
+    z-index: 0;
+
     &__header{
         margin-bottom: variables.$gutter-large;
+
         &__title{
-            font-size: variables.$font-size-large;
+            font-size: variables.$font-size-very-large;
+            line-height: variables.$line-height-very-large;
         }
     }
+
+    &__main{
+        line-height: variables.$line-height;
+    }
+
+    &__header,
+    &__main{
+        width:50%;
+    }
+
+    &::after{
+
+        background: linear-gradient(
+            to right,
+             rgba(variables.$color-background-banner,0.75),
+             rgba(variables.$color-background-banner,0.75) 50%,
+               transparent);
+        content:'';
+        z-index: -1;
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+
+    }
+
 }
 
