@@ -18,6 +18,19 @@ $color-background-banner: #000;
 $color-text-primary: #000;
 $color-text-secondary: #fff;
 
+$post-excerpt-background-colors: (
+    $color-primary,
+    $color-secondary,
+    $color-tertiary,
+    $color-quaternary,
+    $color-quinary,
+    $color-senary,
+    $color-septenary,
+    $color-octonary
+);
+
+$duration-slow: 2s;
+
 $fa-font-path: "../node_modules/font-awesome/fonts";
 $font-size: 1rem;
 $font-size-large: 1.5rem;
@@ -29,4 +42,5 @@ $line-height-very-large: 3rem;
 
 $gutter: 1rem;
 $gutter-large: $gutter * 2;
+$gutter-very-large: $gutter-large * 2;
 $gutter-small: $gutter / 2;
