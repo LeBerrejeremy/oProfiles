@@ -24,5 +24,28 @@
     &__content {
         display: flex;
         flex-direction: column;
+
+        @media (#{$breakpoint-medium}){
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            > * {
+                flex-basis: 50%;
+            }
+        }
+
+        @media (#{$breakpoint-large}){
+
+            :nth-child(4n + 1),
+            :nth-child(4n + 4) {
+                flex-basis: 47.5%;
+            }
+
+            :nth-child(4n + 2),
+            :nth-child(4n + 3) {
+                flex-basis: 52.5%;
+            }
+        }
     }
+
 }

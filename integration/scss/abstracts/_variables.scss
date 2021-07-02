@@ -2,6 +2,10 @@ $border-width: 0.2rem;
 $border-width-large: $border-width * 2;
 $border-width-small: $border-width / 2;
 
+$breakpoint-medium: "min-width: 600px";
+$breakpoint-large: "min-width: 800px";
+$breakpoint-very-large: "min-width: 1200px";
+
 $color-primary: #6fb4fd;
 $color-secondary: #8d82c4;
 $color-tertiary: #242943;
