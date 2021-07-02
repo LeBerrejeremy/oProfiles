@@ -1,7 +1,13 @@
-h1{
-    color:rebeccapurple;
-}
+@import "abstracts/variables";
+@import "../node_modules/reset-css/sass/reset";
+@import "../node_modules/font-awesome/scss/font-awesome";
+@import "base/base";
+@import "components/banner";
+@import "components/button";
+@import "components/header";
+@import "components/logo";
+@import "components/menu";
+@import "components/overlay";
+@import "components/post-excerpt";
+@import "components/post-list";
 
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}

@@ -1,0 +1,50 @@
+$border-width: 0.2rem;
+$border-width-large: $border-width * 2;
+$border-width-small: $border-width / 2;
+
+$breakpoint-medium: "min-width: 600px";
+$breakpoint-large: "min-width: 800px";
+$breakpoint-very-large: "min-width: 1200px";
+
+$color-primary: #6fb4fd;
+$color-secondary: #8d82c4;
+$color-tertiary: #242943;
+$color-quaternary: #ebf0fb;
+$color-quinary: #e56555;
+$color-senary: #de9d5e;
+$color-septenary: #6489df;
+$color-octonary: #65b48a;
+
+$color-background: #e7e7e7;
+$color-background-block: #fff;
+$color-background-banner: #000;
+
+$color-text-primary: #000;
+$color-text-secondary: #fff;
+
+$post-excerpt-background-colors: (
+    $color-primary,
+    $color-secondary,
+    $color-tertiary,
+    $color-quaternary,
+    $color-quinary,
+    $color-senary,
+    $color-septenary,
+    $color-octonary
+);
+
+$duration-slow: 2s;
+
+$fa-font-path: "../node_modules/font-awesome/fonts";
+$font-size: 1rem;
+$font-size-large: 1.5rem;
+$font-size-very-large: 2rem;
+$font-size-small: 0.9rem;
+
+$line-height: 1.5rem;
+$line-height-very-large: 3rem;
+
+$gutter: 1rem;
+$gutter-large: $gutter * 2;
+$gutter-very-large: $gutter-large * 2;
+$gutter-small: $gutter / 2;
