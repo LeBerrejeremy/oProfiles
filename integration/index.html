@@ -8,7 +8,21 @@
     <title>oProfile</title>
 </head>
 <body> 
-
+    <header class="header header--transparent header--fixed">
+        <h1 class="logo">oProfiles</h1>
+        <nav class="menu menu--with-separator">
+            <ul class="menu__list">
+                <li class="menu__list__item">
+                    <a href="#" class="menu__list__item__link">Se connecter</a>
+                </li>
+                <li class="menu__list__item">
+                    <a href="#" class="menu__list__item__link">S'inscrire</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="main-menu-action open-main-menu">	
+            &#9776;</a>
+    </header>
     <section class="banner">
         <header class="banner__header">
             <h2 class="banner__header__title">Bienvenue sur oProfiles</h2>
@@ -103,7 +117,9 @@
             </main>
         </section>
     </main>
-
+    <div class="overlay main-menu">
+        <a href="#" class="main-menu-action close-main-menu">❌</a>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
