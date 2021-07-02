@@ -1,35 +1,45 @@
 //Mon fichier est préfixé par un _ 
 //afin d'indiquer que c'est un fichier un inclure
-@use "../abstracts/variables";
 
 
 
 .banner{
 
-    background-color: variables.$color-background-banner;
+    background-color: $color-background-banner;
     background-image: url(../images/see.jpg);
     background-size: cover;
     background-position: top right;
-    color:variables.$color-text-secondary;
+    color: $color-text-secondary;
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
-    padding: 0 variables.$gutter;
+    padding: 0 $gutter;
     position:relative;
     z-index: 0;
 
     &__header{
-        margin-bottom: variables.$gutter-large;
+        margin-bottom: $gutter-large;
 
         &__title{
-            font-size: variables.$font-size-very-large;
-            line-height: variables.$line-height-very-large;
+            font-size: $font-size-very-large;
+            line-height: $line-height-very-large;
         }
     }
 
     &__main{
-        line-height: variables.$line-height;
+        line-height: $line-height;
+    }
+
+    &__footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .button{
+            margin-bottom: $gutter-small;
+            margin-right: $gutter-small;
+        }
     }
 
     &__header,
@@ -41,8 +51,8 @@
 
         background: linear-gradient(
             to right,
-             rgba(variables.$color-background-banner,0.75),
-             rgba(variables.$color-background-banner,0.75) 50%,
+             rgba($color-background-banner,0.75),
+             rgba($color-background-banner,0.75) 50%,
                transparent);
         content:'';
         z-index: -1;

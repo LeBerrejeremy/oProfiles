@@ -1,3 +1,6 @@
-@use "abstracts/variables";
-@use "../node_modules/reset-css/sass/reset";
-@use "components/banner";
+@import "abstracts/variables";
+@import "../node_modules/reset-css/sass/reset";
+@import "../node_modules/font-awesome/scss/font-awesome";
+@import "components/banner";
+@import "components/button";
+

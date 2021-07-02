@@ -1,3 +1,7 @@
+$border-width: 0.2rem;
+$border-width-large: $border-width * 2;
+$border-width-small: $border-width / 2;
+
 $color-primary: #6fb4fd;
 $color-secondary: #8d82c4;
 $color-tertiary: #242943;
@@ -14,6 +18,7 @@ $color-background-banner: #000;
 $color-text-primary: #000;
 $color-text-secondary: #fff;
 
+$fa-font-path: "../node_modules/font-awesome/fonts";
 $font-size: 1rem;
 $font-size-large: 1.5rem;
 $font-size-very-large: 2rem;

@@ -1,0 +1,31 @@
+
+
+.button{
+    border: {
+        color: $color-primary;
+        style: solid;
+        width: $border-width;
+    };
+    color: $color-primary;
+    padding: $gutter-small;
+    text: {
+        decoration: none;
+        transform: uppercase;
+    };
+    transition: color 1s, border-color 1s;
+
+    &::after {
+        @include fa-icon();
+        content: $fa-var-long-arrow-right;
+        margin-left: $gutter;
+        transition: margin-left 0.5s;
+    }
+
+    &:hover{
+        color: $color-secondary;
+        border-color: $color-secondary;
+        &::after{
+            margin-left: $gutter-large;
+        }
+    }
+}
