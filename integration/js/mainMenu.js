@@ -1,4 +1,5 @@
 let mainMenu = {
+
     init: function(){
         
         let openMainMenuElement = document.querySelector(".open-main-menu");
@@ -10,14 +11,18 @@ let mainMenu = {
 
     open: function() {
         let mainMenuElement = document.querySelector(".main-menu");
+        let containerElement = document.querySelector(".container");
         mainMenuElement.classList.add("visible");
+        containerElement.classList.add("blur");
         //ou
         // mainMenuElement.style.display = "block";
     },
 
     close: function(){
-        let closemainMenuElement = document.querySelector(".main-menu");
-        closemainMenuElement.classList.remove("visible");
+        let mainMenuElement = document.querySelector(".main-menu");
+        let containerElement = document.querySelector(".container");
+        mainMenuElement.classList.remove("visible");
+        containerElement.classList.remove("blur");
     }
         
 };

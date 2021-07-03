@@ -1,3 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+.container{
+    transition: filter $duration-fast;
+
+    &.blur {
+        filter: blur(1rem);
+    }
+}
