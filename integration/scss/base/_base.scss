@@ -6,6 +6,6 @@
     transition: filter $duration-fast;
 
     &.blur {
-        filter: blur(1rem);
+        filter: blur(.5rem);
     }
 }

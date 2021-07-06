@@ -1,0 +1,22 @@
+.carousel{
+    &__title{
+        margin-bottom: $gutter;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        > *{
+            flex-basis: 100%;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    }
+
+    &__footer{
+        margin-top: $gutter;
+    }
+}
