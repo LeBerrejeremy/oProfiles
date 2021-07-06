@@ -18,5 +18,29 @@
 
     &__footer{
         margin-top: $gutter;
+
+        &__navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            > * {
+                background-color: $color-primary;
+                border: none;
+                cursor: pointer;
+                flex: 1 1 100%;
+                height: $gutter-small;
+                margin-right: $gutter;
+                transition: background-color $duration;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    background-color: $color-secondary;
+                }
+            }
+        }
     }
 }
