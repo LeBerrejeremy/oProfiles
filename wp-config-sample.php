@@ -64,8 +64,11 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = 'wp_';
-define('WP_SITEURL', 'put_your_url_wordpress_here' );
-define('WP_HOME', 'put_your_home_url_here' );
+
+define('WP_HOME', rtrim('put_your_home_url_here', '/' ) );
+define('WP_SITEURL', WP_HOME . '/wordpress' );
+define('WP_CONTENT_URL', WP_HOME . '/wp-content' );
+define('WP_CONTENT_DIR', __DIR__ . '/wp-content' );
 /**
  * For developers: WordPress debugging mode.
  *
