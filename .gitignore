@@ -1,0 +1,9 @@
+vendor
+wordpress
+wp-config.php
+wp-content/plugins/query-monitor
+wp-content/themes/twentytwenty
+wp-content/themes/twentytwentyone
+wp-content/languages
+wp-content/upgrade
+wp-content/uploads
